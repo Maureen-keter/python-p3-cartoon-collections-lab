@@ -17,13 +17,15 @@ def long_planeteer_calls(calls):
              return False          
                            
 def find_the_cheese(ingredients):
-    cheese_types = ["cheddar", "gouda", "camembert"]
+    cheeses = ["cheddar", "gouda", "camembert"]
+
     for ingredient in ingredients:
-        if any(cheese in ingredient for cheese in cheese_types):
+         if any(cheese in ingredient for cheese in cheeses):
             return ingredient
+         
     return None
 
-         
 
          
-   
+
+
